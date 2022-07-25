@@ -1,0 +1,441 @@
+@import url(https://fonts.google.com/specimen/Inter);
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1439px) {
+  body {
+    background-image: linear-gradient(to top, hsl(0deg, 0%, 100%) 75%, hsl(225deg, 100%, 98%) 25%);
+  }
+  body div.main {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body div.main nav {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+  }
+  body div.main nav div.leftNav {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    line-height: 1.5;
+    border-bottom: 0.5px solid hsl(230deg, 22%, 74%);
+  }
+  body div.main nav div.leftNav h1 {
+    color: black;
+  }
+  body div.main nav div.leftNav p {
+    font-size: 14px;
+    font-weight: 700;
+    color: hsl(230deg, 22%, 74%);
+    margin-bottom: 20px;
+  }
+  body div.main nav div.rightNav {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  body div.main nav div.rightNav p {
+    font-weight: 700;
+    color: hsl(230deg, 22%, 74%);
+  }
+  body div.main nav div.rightNav div.toggle {
+    margin-left: 10px;
+    width: 60px;
+    height: 30px;
+    background: hsl(230deg, 22%, 74%);
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+  }
+  body div.main nav div.rightNav div.toggle div.indicator {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: scale(0.8);
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 50%;
+    left: 30px;
+  }
+  body div.main div.Upper {
+    font-weight: 400;
+    font-size: 14px;
+    width: 90%;
+  }
+  body div.main div.Upper div div.bordo {
+    height: 5px;
+    width: 100%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  body div.main div.Upper div div.bordo.facebookBorder {
+    background-color: hsl(208deg, 92%, 53%);
+  }
+  body div.main div.Upper div div.bordo.twitterBorder {
+    background-color: hsl(203deg, 89%, 53%);
+  }
+  body div.main div.Upper div div.bordo.youtubeBorder {
+    background-color: hsl(356deg, 69%, 56%);
+  }
+  body div.main div.Upper div div.bordo.instagramBorder {
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  }
+  body div.main div.Upper div article.topSocial {
+    width: 100%;
+    height: 200px;
+    background-color: hsl(227deg, 47%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  body div.main div.Upper div article.topSocial:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+    transition: 0.3s;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial picture {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(230deg, 22%, 74%);
+    font-weight: 700;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial div.midSocial {
+    text-align: center;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial div.midSocial p:first-child {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial div.midSocial p:last-child {
+    letter-spacing: 3px;
+    color: hsl(230deg, 22%, 74%);
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial > p {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: hsl(163deg, 72%, 41%);
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial > p img {
+    margin-right: 5px;
+  }
+  body div.main h2 {
+    color: hsl(230deg, 22%, 74%);
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  body div.main div.bottomSide {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 20px;
+  }
+  body div.main div.bottomSide article.bottomSocial {
+    width: 100%;
+    height: 150px;
+    background-color: hsl(227deg, 47%, 96%);
+    padding: 30px;
+  }
+  body div.main div.bottomSide article.bottomSocial:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+    transition: 0.3s;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(1) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(3) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(4) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(5) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(6) div div.right p {
+    color: hsl(163deg, 72%, 41%);
+    font-weight: 700;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(1) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(3) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(4) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(5) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(6) div div.right p img {
+    margin-right: 3px;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(2) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(7) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(8) div div.right p {
+    color: hsl(356deg, 69%, 56%);
+    font-weight: 700;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(2) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(7) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(8) div div.right p img {
+    margin-right: 3px;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.left p:first-child {
+    color: hsl(230deg, 22%, 74%);
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.left p:last-child {
+    font-size: 40px;
+    color: black;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.right img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.right p {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: linear-gradient(to top, hsl(0deg, 0%, 100%) 75%, hsl(225deg, 100%, 98%) 25%);
+  }
+  body div.main {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  body div.main nav {
+    width: 90%;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  body div.main nav div.leftNav {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    line-height: 1.5;
+  }
+  body div.main nav div.leftNav h1 {
+    color: black;
+  }
+  body div.main nav div.leftNav p {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(230deg, 22%, 74%);
+    margin-bottom: 20px;
+  }
+  body div.main nav div.rightNav {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body div.main nav div.rightNav p {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(230deg, 22%, 74%);
+  }
+  body div.main nav div.rightNav div.toggle {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 60px;
+    height: 30px;
+    background: hsl(230deg, 22%, 74%);
+    border-radius: 50px;
+    position: relative;
+  }
+  body div.main nav div.rightNav div.toggle div.indicator {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: scale(0.8);
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 50%;
+    left: 30px;
+  }
+  body div.main div.Upper {
+    font-weight: 400;
+    font-size: 14px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  body div.main div.Upper div {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body div.main div.Upper div div.bordo {
+    height: 5px;
+    width: 100%;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+  body div.main div.Upper div div.bordo.facebookBorder {
+    background-color: hsl(208deg, 92%, 53%);
+  }
+  body div.main div.Upper div div.bordo.twitterBorder {
+    background-color: hsl(203deg, 89%, 53%);
+  }
+  body div.main div.Upper div div.bordo.youtubeBorder {
+    background-color: hsl(356deg, 69%, 56%);
+  }
+  body div.main div.Upper div div.bordo.instagramBorder {
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  }
+  body div.main div.Upper div article.topSocial {
+    width: 100%;
+    height: 200px;
+    background-color: hsl(227deg, 47%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  body div.main div.Upper div article.topSocial:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+    transition: 0.3s;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial picture {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: hsl(230deg, 22%, 74%);
+    font-weight: 700;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial div.midSocial {
+    text-align: center;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial div.midSocial p:first-child {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial div.midSocial p:last-child {
+    letter-spacing: 3px;
+    color: hsl(230deg, 22%, 74%);
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial > p {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: hsl(163deg, 72%, 41%);
+  }
+  body div.main div.Upper div article.topSocial div.mainSocial > p img {
+    margin-right: 5px;
+  }
+  body div.main h2 {
+    color: hsl(230deg, 22%, 74%);
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  body div.main div.bottomSide {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    gap: 30px;
+  }
+  body div.main div.bottomSide article.bottomSocial {
+    width: 100%;
+    height: 150px;
+    background-color: hsl(227deg, 47%, 96%);
+    padding: 30px;
+  }
+  body div.main div.bottomSide article.bottomSocial:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+    transition: 0.3s;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(1) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(3) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(4) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(5) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(6) div div.right p {
+    color: hsl(163deg, 72%, 41%);
+    font-weight: 700;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(1) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(3) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(4) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(5) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(6) div div.right p img {
+    margin-right: 3px;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(2) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(7) div div.right p, body div.main div.bottomSide article.bottomSocial:nth-child(8) div div.right p {
+    color: hsl(356deg, 69%, 56%);
+    font-weight: 700;
+  }
+  body div.main div.bottomSide article.bottomSocial:nth-child(2) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(7) div div.right p img, body div.main div.bottomSide article.bottomSocial:nth-child(8) div div.right p img {
+    margin-right: 3px;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.left p:first-child {
+    color: hsl(230deg, 22%, 74%);
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.left p:last-child {
+    font-size: 40px;
+    color: black;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.right img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+  body div.main div.bottomSide article.bottomSocial div.innerBottom div.right p {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
